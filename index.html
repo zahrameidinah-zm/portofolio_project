@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bagian index</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Zahra<span class="dot">.</span></a>
+
+      <input type="checkbox" id="nav-toggle" aria-hidden="true">
+      <label for="nav-toggle" class="menu-toggle" aria-label="Buka navigasi" role="button" tabindex="0">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="main-nav" aria-label="main navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="works.html" class="nav-link">Works</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" aria-labelledby="hero-heading">
+      <div class="hero-left">
+        <h1 id="hero-heading">Hi, saya Zahra Meidinah Tahsya — <span class="muted">Web Developer & UI Designer</span></h1>
+        <p class="lead">Saya merancang pengalaman digital yang sederhana namun bermakna, menggabungkan desain visual yang bersih dengan interaksi yang menyenangkan.</p>
+        <p class="hero-cta">
+          <a href="works.html" class="btn">Lihat Proyek</a>
+          <a href="blog.html" class="btn btn-ghost">Baca Blog</a>
+        </p>
+      </div>
+
+      <aside class="hero-right">
+        <img src="assets/foto zahram.jpeg" alt="Foto profil Zahra" class="avatar">
+      </aside>
+    </section>
+
+    <section class="recent container">
+      <div class="section-head">
+        <h2>Recent Posts</h2>
+        <a class="view-all" href="blog.html">View all</a>
+      </div>
+
+      <div class="posts-grid">
+        <article class="post-card">
+          <h3><a href="single-blog.html">Tips Mendesain Website yang Menarik</a></h3>
+          <p class="meta">17 Okt 2025 &nbsp; | &nbsp; Design, UI</p>
+          <p>Prinsip dasar saat membuat layout: jarak, tipografi, dan hirarki visual untuk pengalaman yang lebih baik.</p>
+        </article>
+
+        <article class="post-card">
+          <h3><a href="single-blog.html">Menggunakan CSS Grid untuk Layout Kompleks</a></h3>
+          <p class="meta">10 Sep 2025 &nbsp; | &nbsp; CSS, Frontend</p>
+          <p>Implementasi grid untuk dashboard responsif dan cara menjaga konsistensi di berbagai breakpoint.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="featured container">
+      <h2>Featured Works</h2>
+      <div class="works-grid">
+        <article class="work-item">
+          <img src="assets/pic index 1.png" alt="Website Sekolah Hebat">
+          <div class="work-body">
+            <h3><a href="work-detail.html#sekolah">Website Sekolah Hebat</a></h3>
+            <p class="badge">2024 • Education</p>
+            <p>Website informatif untuk sekolah dengan modul berita, galeri, dan manajemen konten sederhana.</p>
+          </div>
+        </article>
+
+        <article class="work-item">
+          <img src="assets/pic index 2.jpg" alt="Aplikasi Kasir Cafe">
+          <div class="work-body">
+            <h3><a href="work-detail.html#kasir">Aplikasi Kasir Cafe</a></h3>
+            <p class="badge">2024 • Retail</p>
+            <p>Sistem kasir berbasis web untuk transaksi, laporan, dan manajemen stok—optimized untuk tablet.</p>
+          </div>
+        </article>
+
+        <article class="work-item">
+          <img src="assets/pic index 3.jpg" alt="Landing Page Produk">
+          <div class="work-body">
+            <h3><a href="work-detail.html#landing">Landing Page Produk</a></h3>
+            <p class="badge">2023 • Marketing</p>
+            <p>Landing page fokus konversi; CTA jelas, layout bersih, dan loading cepat.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="socials">
+        <a href="#" class="s" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/zahrameidinah_?igsh=MWJ4b2VqM256N3l2eQ==" class="s" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="s" aria-label="X / Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="s" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <small>© 2025 Zahra - All rights reserved</small>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      var t = document.getElementById('nav-toggle');
+      document.querySelectorAll('.main-nav a').forEach(function(a){
+        a.addEventListener('click', function(){ if(t) t.checked = false; });
+      });
+    });
+  </script>
+</body>
+</html>

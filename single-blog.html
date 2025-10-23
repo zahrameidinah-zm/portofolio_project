@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bagian single blog</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Zahra<span class="dot">.</span></a>
+
+      <input type="checkbox" id="nav-toggle" aria-hidden="true">
+      <label for="nav-toggle" class="menu-toggle" aria-label="Buka navigasi" role="button" tabindex="0">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="main-nav" aria-label="main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="works.html" class="nav-link">Works</a>
+        <a href="blog.html" class="nav-link active">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page article-page">
+    <a class="backlink" href="blog.html">← Kembali ke Blog</a>
+    <article class="article">
+      <h1>Tips Mendesain Website yang Menarik</h1>
+      <p class="meta">Ditulis oleh Zahra - 17 Okt 2025</p>
+
+      <figure class="feature-image">
+        <img src="assets/pic single_blog.png" alt="Contoh desain web">
+      </figure>
+
+      <section class="article-body">
+        <h2>1. Mulai dari Struktur</h2>
+        <p>Susun layout menggunakan CSS Grid untuk area utama dan Flexbox untuk komponen kecil. Ini membuat layout mudah diubah tanpa merombak seluruh markup.</p>
+
+        <h2>2. Pilih Tipografi yang Jelas</h2>
+        <p>Gunakan kombinasi font: satu untuk heading (lebih tebal) dan satu untuk body (nyaman dibaca). Jaga ukuran agar proporsional di mobile.</p>
+
+        <h2>3. Jaga Spasi & Kontras</h2>
+        <p>Whitespace membantu elemen “bernapas”; kontras yang tepat membuat teks mudah dibaca dan CTA lebih menonjol.</p>
+      </section>
+    </article>
+  </main>
+
+   <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="socials">
+        <a href="#" class="s" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/zahrameidinah_?igsh=MWJ4b2VqM256N3l2eQ==" class="s" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="s" aria-label="X / Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="s" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <small>© 2025 Zahra - All rights reserved</small>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      var t = document.getElementById('nav-toggle');
+      document.querySelectorAll('.main-nav a').forEach(function(a){
+        a.addEventListener('click', function(){ if(t) t.checked = false; });
+      });
+    });
+  </script>
+</body>
+</html>

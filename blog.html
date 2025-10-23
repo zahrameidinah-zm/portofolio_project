@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bagian Blog</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Zahra<span class="dot">.</span></a>
+
+      <input type="checkbox" id="nav-toggle" aria-hidden="true">
+      <label for="nav-toggle" class="menu-toggle" aria-label="Buka navigasi" role="button" tabindex="0">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="main-nav" aria-label="main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="works.html" class="nav-link">Works</a>
+        <a href="blog.html" class="nav-link active">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page blog-page">
+    <h1 class="page-title">Blog</h1>
+
+    <div class="blog-list">
+      <article class="blog-list-item">
+        <img src="assets/pic blog 1.jpg" alt="Tips desain">
+        <div class="bl-body">
+          <h3><a href="single-blog.html">Tips Mendesain Website yang Menarik</a></h3>
+          <p class="meta">17 Okt 2025 &nbsp; | &nbsp; Design</p>
+          <p>Langkah-langkah praktis untuk tampilan web yang bersih, konsisten, dan mudah dipahami—mulai dari warna, tipografi, hingga tata letak.</p>
+        </div>
+      </article>
+
+      <article class="blog-list-item">
+        <img src="assets/pic blog 3.jpg" alt="CSS Grid">
+        <div class="bl-body">
+          <h3><a href="single-blog.html">Pentingnya CSS Grid dalam Web Modern</a></h3>
+          <p class="meta">10 Sep 2025 &nbsp; | &nbsp; CSS</p>
+          <p>Grid mempermudah layout kompleks tanpa script tambahan. Cocok untuk dashboard, portfolio, dan layout responsif multi-kolom.</p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="socials">
+        <a href="#" class="s" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/zahrameidinah_?igsh=MWJ4b2VqM256N3l2eQ==" class="s" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="s" aria-label="X / Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="s" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <small>© 2025 Zahra - All rights reserved</small>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      var t = document.getElementById('nav-toggle');
+      document.querySelectorAll('.main-nav a').forEach(function(a){
+        a.addEventListener('click', function(){ if(t) t.checked = false; });
+      });
+    });
+  </script>
+</body>
+</html>
